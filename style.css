@@ -1,11 +1,12 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-background: 31px 31px/calc(2*31px) calc(2*31px) conic-gradient(at calc(500%/6) 50%,#81e2ed 25%,#0000 0),0 0/calc(2*31px) calc(2*31px) conic-gradient(at calc(500%/6) 50%,#81e2ed 25%,#0000 0),
+    31px 31px/calc(2*31px) calc(2*31px) conic-gradient(at calc(200%/3) 50%,#d8e2ff 25%,#0000 0),0 0/calc(2*31px) calc(2*31px) conic-gradient(at calc(200%/3) 50%,#d8e2ff 25%,#0000 0),
+    repeating-conic-gradient(#ef8efb 0 25%,#0000 0 50%) 0 0/calc(2*31px) calc(2*31px),
+    linear-gradient(#ef8efb calc(100%/3),#d8e2ff 0 calc(200%/3),#81e2ed 0)
+     0 0/31px 31px;
+    --color-primary: #000000;
+    --color-button-hover: #000000;
+    --color-text: #ffffff;
 }
 
 /* Estilos gerais */
@@ -15,12 +16,15 @@
     box-sizing: border-box;
 }
 
+
 body {
-    height: 100vh;
-    background-color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background:
+      31px 31px/calc(2*31px) calc(2*31px) conic-gradient(at calc(500%/6) 50%,#81e2ed 25%,#0000 0),0 0/calc(2*31px) calc(2*31px) conic-gradient(at calc(500%/6) 50%,#81e2ed 25%,#0000 0),
+      31px 31px/calc(2*31px) calc(2*31px) conic-gradient(at calc(200%/3) 50%,#d8e2ff 25%,#0000 0),0 0/calc(2*31px) calc(2*31px) conic-gradient(at calc(200%/3) 50%,#d8e2ff 25%,#0000 0),
+      repeating-conic-gradient(#ef8efb 0 25%,#0000 0 50%) 0 0/calc(2*31px) calc(2*31px),
+      linear-gradient(#ef8efb calc(100%/3),#d8e2ff 0 calc(200%/3),#81e2ed 0)
+       0 0/31px 31px;
+
 }
 
 .main-content {
@@ -32,42 +36,48 @@ body {
 
 /* Banner */
 .header-banner {
-    flex: 40%;
     display: flex;
-    justify-content: center;
+    margin: 60px 20%;
+    padding: 20px;
+    border: 10px solid #000;
+    border-radius: 25px;
+    overflow: hidden;
     align-items: center;
-    padding: 40px 0 0;
+    justify-content: center;
+    background-color: #ffffff80;
 }
-
 /* Seção de entrada */
 .input-section {
     flex: 60%;
-    background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border: 9px solid #000;
+    border-radius: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     width: 100%;
+    background-color: #ffffff80;
 }
 
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-family: "Silkscreen", sans-serif;
     font-weight: 900;
-    font-style: italic;
-    color: var(--color-white);
+    font-style: normal;
+    color: var(--color-primary);
+    align-items: center;
+    justify-content: center;
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
-    font-weight: 700;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 38px;
     color: var(--color-primary);
     margin: 10px 0;
-    text-align: center;
+    text-align: center;   
 }
 
 /* Contêineres de entrada e botão */
@@ -77,15 +87,18 @@ body {
     width: 100%;
     max-width: 600px;
     margin-top: 20px;
+    
 }
 
 .input-name {
     width: 100%;
     padding: 10px;
-    border: 2px solid #000;
+    border: 5px solid #000;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
+    
 }
+
 
 .button-container {
     width: 300px;
@@ -100,44 +113,45 @@ body {
     border: 2px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: "Silkscreen", sans-serif;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 
 /* Estilos de botão */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    border: 2px solid #000;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 20px;
+    border: 4px solid #000;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
     cursor: pointer;
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-background);
     color: var(--color-text);
+    
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-button-hover);
 }
 
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
+    color: var(--color-primary);
+    font-family: "Silkscreen", sans-serif;
     font-size: 18px;
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
+    color: #9b3a9e;
+    font-size: 29px;
     font-weight: bold;
     text-align: center;
 }
@@ -146,16 +160,15 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
+    color: var(--color-text);
+    background-color:var(--color-background);;
+    font-size: 20px;
 }
 
-.button-draw img {
-    margin-right: 40px;
-}
+
 
 .button-draw:hover {
     background-color: var(--color-button-hover);

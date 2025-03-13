@@ -73,6 +73,6 @@ function limparLista() {
 
     setTimeout(() => {
         resultado.innerHTML = '';
-    }, 4000);
+    }, 5000);
    
 }
