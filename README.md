@@ -15,7 +15,7 @@
 
 ## 🚀 Como Usar
 
-1. Acesse o site: [Clique aqui para acessar o site](https://github.com/mewrimellow/Amigo-Secreto)
+1. Acesse o site: [Clique aqui para acessar o site](https://amigo-secreto-ruddy-psi.vercel.app/)
 2. Insira os nomes dos seus amigos no campo indicado.
 3. Clique no botão **"Sortear"** e veja quem será o sorteado!
 4. Após o sorteio, se quiser realizar um novo sorteio, clique no botão **"Novo Sorteio"** e repita o processo!
